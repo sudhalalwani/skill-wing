@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>skill wings</title>
+</head>
+<body>
+
+		<style type="text/css">
+		header{
+			background-color: crimson;
+			height: 100px;
+		}
+		section{
+			text-align: left;
+
+		}
+		td{
+			text-align: left;
+			color: grey;
+		}
+		th{
+			text-align: left;
+		}
+		* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  position: static;
+  table-layout: fixed;
+  text-align: justify;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  position: static;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 30px;
+  position: relative;
+  text-align: justify;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+     .button {
+      background-color:crimson;
+      color: white;
+      width: 140px;
+      height: 50px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 17px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-left: 15px;
+        border-spacing: 10px;
+        border-color: crimson;
+        text-decoration: white;
+        box
+     }
+     .button1 {
+      background-color:crimson;
+      color: white;
+      width: 190px;
+      height: 50px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 16px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-left: 15px;
+        border-spacing: 10px;
+        border-color: crimson;
+        text-decoration: white;
+     }
+      
+     
+     .button1 a{
+      background-color:crimson;
+      color: white;
+      width: 140px;
+      height: 50px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 17px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-left: 15px;
+        border-spacing: 10px;
+        border-color: crimson;
+        text-decoration: white;
+     }
+      .button1:hover{
+       background-color: maroon;
+       border-color: maroon;
+     }
+     .link a{
+             background-color:crimson;
+             color: white;
+             width: 140px;
+             height: 50px;
+             padding: 15px 25px;
+             text-align: center;
+             font-size: 17px;
+             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+             border-left: 15px;
+             border-spacing: 10px;
+             border-color: crimson;
+             text-decoration: white;
+            
+     }
+
+     .link a:hover{
+      background-color: maroon;
+     }
+
+	</style>
+
+
+	<header>
+   	 <nav>
+   	 	<input type="text" name="search" value="search for products,brands and more" size="100" style="margin-top: 50px; margin-left: 350px;">
+        <button>search</button>
+   	 </nav>		
+    </header>
+
+
+<div class="row">
+  <div class="column1">
+    <img src="data:image/jpeg;base64,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" height="200px" width="400px">
+
+        <h3>Lenovo Ideapad 330 (i3 7020U /4 GB RAM/1 TB HDD/ 39.624 cm <br>(15.6 inch)HD /DOS/No ODD) 81DE00F4IN (Onyx Black 2.2 Kg)</h3>
+        <p>(4.1)</p>
+        <p><b>MRP Rs. 24499 <span style="color: red; font-size: 10px;"> 39% OFF</span></b></p>
+
+        
+        <div class="link">
+          <a href="buynow.html">Buy Now</a>
+          <a href="skillwing.html">Add To Cart</a>
+        </div>
+<table style="column-width: 90px; padding-top: 30px">
+  <tr>
+    <td>Delivery</td>
+    <td><input type="number" name="pin code" value="Enter Pin Code"></td>
+  </tr>
+        
+</table>
+  </div>
+
+
+  <div class="column2" >
+       <button class="button1">Item Details</button>
+    <button class="button1" value="ratings.html">Rating & Reviews</a></button>
+  </div>
+
+<div class="row">
+  <div class="column" style="background-color:#DCDCDC;">
+   <table>
+    <th>Highlights</th>
+  <tr>
+    <td>Warranty Period:1 Year</td><emsp>
+    <td>Usage:Home</td><emsp>
+    <td>Resolution:1366x768 (WXGA)</td>
+    </tr>
+    <tr>
+      <td>Base Clock Speed (in GHz):2.3</td>
+      <td>Backlit Keyboard:No</td>
+      <td>Optical Drive:Not Available</td>
+    </tr>
+</table>
+<b>Other Specifications</b>
+<table >
+  <th align="left">STORAGE</th>
+  <tr>
+    <td>Hard Disk Capacity  1 TB</td>
+    <td>SSD Capacity  Not Applicable</td>
+    <td>Storage Type  HDD</td>
+  </tr>
+  <tr>
+    <td>eMMC Capacity Not Applicable</td>
+    <td>HDD RPM 5400 RPM</td>
+  </tr>
+
+  <th>BATTERY</th>
+  <tr>
+    <td>Battery Backup  Upto 6 hours</td>
+  </tr>
+
+  <th>OPERATING SYSTEM</th>
+  <tr>
+    <td>Operating System  DOS</td>
+  </tr>
+
+  <th>INPUT</th>
+  <tr>
+    <td>Touchpad  Yes (with Multi-touch Gesture Support)</td>
+    <td>Keyboard  Standard Keyboard without Numpad</td>
+    <td>Webcam  1 MP (HD)</td>
+  </tr>
+  <tr>
+    <td>Backlit Keyboard  No</td>
+    <td>Internal Mic  Yes</td>
+  </tr>
+
+  <th>PROCESSOR</th>
+  <tr>
+    <td>Variant 7020U</td>
+    <td>Processor Brand Intel</td>
+    <td>Burst Clock Speed (in GHz)  2.3</td>
+  </tr>
+  <tr>
+    <td>Base Clock Speed (in GHz) 2.3</td>
+    <td>Instruction Set 64 bit</td>
+    <td>Processor Name  Core i3 (7th Generation)</td>
+  </tr>
+  <tr>
+    <td>Cache 3 MB</td>
+  </tr>
+
+  <th>OVERVIEW</th>
+  <tr>
+    <td>Brand Lenovo</td>
+    <td>Series  Ideapad</td>
+    <td>Type  Notebook</td>
+  </tr>
+  <tr>
+    <td>Usage Home</td>
+    <td>Color Black</td>
+    <td>Model Number  81DE00F4IN</td>
+  </tr>
+
+  <th>SIZE & WEIGHT</th>
+  <tr>
+    <td>Weight (in Kg)  2.2</td>
+    <td>Thickness (in mm) 22.7</td>
+    <td>Width (in mm) 375</td>
+  </tr>
+  <tr>
+    <td>Length (in mm)  253</td>
+  </tr>
+
+  <th>MEMORY(RAM)</th>
+  <tr>
+    <td>RAM Slots 1 (Unused - 0)</td>
+    <td>RAM Type  DDR4</td>
+    <td>Expandable RAM  Not Applicable</td>
+  </tr>
+  <tr>
+    <td>Optane  NA</td>
+    <td>RAM 4 GB</td>
+  </tr>
+</table>
+  </div>
+  <div class="column" style="background-color:#DCDCDC">
+    <table>
+  <th>AUDIO</th>
+  <tr>
+    <td>Sound Effect  Yes</td>
+    <td>Speakers  Yes</td>
+  </tr>
+</table>
+<table>
+  <th>DISPLAY</th>
+  <tr>
+    <td>Screen Size 39.62cm(15.6)</td>
+    <td>Touch Screen  No</td>
+    <td>Screen Type LED</td>
+  </tr>
+  <tr>
+    <td>Resolution  1366x768 (WXGA)</td>
+  </tr>
+</table>
+
+    <b class="align">Other Details</b><br>
+<table class="align">
+  <tr>
+    <td>Common or Generic Name of the commodity</td></tr>
+    <tr><td>Country of Origin or Manufacture or Assembly</td></tr>
+    <tr><td>No. of Items inside</td></tr>
+    <tr><td>Manufacturer's Name & Address</td></tr>
+    <tr><td>Net Quantity</td></tr>
+    <tr><td>Packer's Name & Address</td></tr>
+    <tr><td>Marketer's Name & Address</td></tr>
+    <tr><td>Importer's Name & Address</td></tr>
+
+</table>
+      <p class="align" style="color: grey;"><b class="align" style="color: black;">Note :</b> Please Use Invoice To Register The Product On Brand Website Within 30 Days Of Purchase For Hassle Free Service.</p>
+<table class="align">
+	 <th>CONNECTIVITY</th>
+    <tr><td>Bluetooth v4.1</td></tr>
+    <tr><td>Ethernet (RJ45 LAN Port)  Upto 1 Gbps</td></tr>
+    <tr><td>WiFi  Yes</td></tr>
+  <th>PORTS & SLOTS</th>
+    <tr><td>HDMI Port Yes</td></tr>
+    <tr><td>USB 3.1 Ports None</td></tr>
+    <tr><td>VGA Port  No</td></tr>
+    <tr><td>USB 2.0 Ports None</td></tr>
+    <tr><td>USB Type C Ports  None</td></tr>
+    <tr><td>Multi Card Slot Yes</td></tr>
+    <tr><td>USB 3.0 Ports 2</td></tr>
+    <tr><td>Lock Port Not Available</td></tr>
+    <th>WARRANTY DETAILS</th>
+    <tr><td>Warranty Period 1 Year</td></tr>
+    <tr><td>Warranty Type Onsite Warranty</td></tr>
+    <th>SALES PACKAGE</th>
+    <tr><td>In The Box  Laptop, Adapter, User Manual Laptop Bag/Backpack  No</td></tr>
+    <th>OPTICAL DRIVE</th>
+    <tr><td>Read/Write Speed  Not Applicable</td></tr>
+    <tr><td>Optical Drive Not Available</td></tr>
+</table>
+
+ <b class="align">Description</b>
+<p class="align" style="color: grey;">Lenovo Ideapad 330 (i3 7020U /4 GB RAM/1 TB HDD/ 39.624 cm (15.6 inch)HD /DOS/No ODD) 81DE00F4IN (Onyx Black 2.2 Kg)</p>
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
